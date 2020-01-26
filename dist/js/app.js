@@ -18,14 +18,5 @@ const navSlide = () => {
     burger.classList.toggle('menu-toggle');
   });
 };
-const prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  const currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById('navbar').style.top = '0';
-  } else {
-    document.getElementById('navbar').style.top = '5px';
-  }
-  prevScrollpos = currentScrollPos;
-};
+
 navSlide();
