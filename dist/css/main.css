@@ -231,19 +231,6 @@ l-section {
   text-align: justify;
   color: #fff;
 }
-/* .r-Section {
-  display: grid;
-  grid-area: b;
-  position: fixed;
-  margin: 1em;
-  padding-top: 10%;
-  right: 4%;
-}
-.r-Section .arrow {
-  padding-top: 1.2em;
-  padding-bottom: 1.2em;
-  color: rgba(49, 255, 104, 1);
-} */
 
 /* Media Queries */
 
@@ -251,15 +238,17 @@ l-section {
   body {
     overflow-x: hidden;
   }
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr;
+  .c-content {
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    text-align: left;
     margin-left: 5%;
     width: 80%;
   }
   .upper-tag {
-    margin-top: 25%;
+    margin-top: 2%;
     font-size: 1.3em;
     letter-spacing: 1px;
   }
@@ -283,12 +272,6 @@ l-section {
     font-size: 1.1em;
     width: 150px;
   }
-
-  /* .menu-branding {
-    position: absolute;
-    top: 15%;
-    left: 10%;
-  } */
 
   .menu-nav {
     position: absolute;
@@ -315,8 +298,43 @@ l-section {
     position: absolute;
     right: 10%;
   }
+  .menu-branding {
+    display: none;
+  }
+  #sideIcons {
+    display: none;
+  }
+  .about-me {
+    display: block;
+    /* padding-top: 100%; */
+    top: 80%;
+    margin-bottom: 1rem;
+  }
+  .sub-Heading {
+    text-align: center;
+    margin-top: 2em;
+  }
+  .about-text {
+    text-align: justify;
+    width: 80%;
+    margin-top: 1em;
+    padding: 0.5rem;
+  }
+  .profile-photo {
+    position: absolute;
+    top: 15%;
+    left: 1%;
+    /* border: 2px solid red; */
+    width: fit-content;
+    padding: 3px;
+  }
+  .profile-photo img {
+    width: 120px;
+  }
+  /* End 768px */
 }
 
+/* Menu Animation For mobile view */
 .menu-nav-active {
   transform: translateX(0%);
 }
@@ -342,3 +360,4 @@ l-section {
 .menu-toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
+/* End Menu Animation */
