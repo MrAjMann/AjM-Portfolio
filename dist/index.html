@@ -58,7 +58,7 @@
       </div>
     </nav>
     <main>
-      <div class="grid-container">
+<div class="grid-container">
         <div class="l-Section ">
           <div class="icons" id="sideIcons">
             <ul class=icon-list>
@@ -76,37 +76,100 @@
             <h2 class="upper-tag"><span>Hi</span> my name is,</h2>
             <h1 class="m-heading">Anthony Mann</h1>
             <h2 class="lower-tag"><span>&</span> This is my story..</h2 class="lower-tag">
-              <p class="c-para">I am a Fullstack developer in training based in Toowoomba (Moving to Brisbane),
-                QLD with a passion for designing and developing small websites 
-                and workflow automation applications. </p>
-                <button class="cta-btn">Get in touch</button>
-              </div>
+              <p class="c-para">Fullstack developer with a passion for designing and developing small websites
+              and workflow automation applications. </p>
+              <button class="cta-btn">Get in touch</button>
             </div>
+          </div>
+        </div> 
+        </main>
+  <section class="aboutMe"> 
+    <div class="aboutMeContainer">
+      <div class="aboutMeCard">
+        <div class="aboutPhoto">
+          <img src="../Assets/Me336px.png" class="profilePhoto" alt="My Photo">
+        </div>
+        <div class="aboutMeContent">
+          <h2 class="sub-Heading"><span> 01.</span> About Me</h2>
+          <p class="about-text"> <span>Hi</span>, I'm an aspiring Fullstack developer currently based in Toowoomba, QLD however I am moving to Brisbane at the end of Febuary 2020. 
+          <br>
+          So for the last few years I have been working in the Aged care sector and it is my main reason for this change, I wish to develop applications and web based services within the Health Care industry to provide support for nursing staff, patients and thier families.
+          </p>
+          <div class="currentTech">
+            <h4>Technologies Used</h4>
+            <ul class="techList">
+              <li> <span> > </span> HTML & CSS</li> 
+              <li> <span> > </span> Javascript (ES6)</li>
+              <li> <span> > </span> Python</li>
+              <li> <span> > </span> Github</li>
+            </ul>
+          </div>   
+        </div>
       </div>
-    </main>
-    <section class="about-me">
-      <div>
-        <h2 class="sub-Heading"><span> 01.</span> About Me</h2>
-        <br>
-        <p class="about-text"> <span>Hi</span>, I'm Anthony an aspiring Fullstack developer currently based in Toowoomba, QLD however I am moving to Brisbane at the end of Febuary 2020.</p>
-        <br>
-      <p class="about-text"> So for the last few years I have been working in the Aged care sector and it is my main reason for this change, I wish to develop applications and web based services within the Health Care industry to provide support for nursing staff, patients and thier families.
+    </div>
+</section>
+<section class="projects">
+  <div class="project-container">
+    <!-- First Card -->
+    <div class="projectCard">
+      <div class="imgBx">
+        <a href=""><img src="../landingPage.png" alt=""></a>
+      </div>
+    <div class="projectContent">
+      <h2><span>01.</span>Project A</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Iusto veniam dolorum molestias, ea hic debitis quis quas.
       </p>
-      <br>  
-          
-        <ul class="currentTech">
-          <li> <span> > </span> HTML & CSS</li> 
-          <li> <span> > </span> Javascript (ES6)</li>
-          <li> <span> > </span> Python</li>
-          <li> <span> > </span> Github</li>
-          
-        </ul>
-      </div>
-      <div class="profile-photo">
-        <img src="../Assets/MeBandW.png" alt="Profile Photo">
-      </div>
-    </section>
+      <a href=""><span>Read More</span></a>
+    </div>
+  </div>
+  <div class="projectCard">
+    <div class="imgBx">
+      <a href=""><img src="../landingPage.png" alt=""></a>
+    </div>
+  <div class="projectContent">
+    <h2><span>01.</span>Project A</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      Iusto veniam dolorum molestias, ea hic debitis quis quas.
+    </p>
+    <a href=""><span>Read More</span></a>
+  </div>
+</div>
+  </div>
+</section>
+<!-- 
+    
+  ------------------------------------------------------------
 
-    <script src="js/app.js"></script>
-  </body>
+-->
+<div class="contactForm">
+  <form class="contactContainer" name="contactMe" action="POST" data-netlify="true">
+    <div class="inputFields">
+      <h2><span>03.</span> Contact Me </h2>
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name"placeholder="Your Name" required/>
+      <label for="tel">Phone Number:</label>
+      <input type="tel" name="tel" id="phone" placeholder="0428634295" maxlength="10" required/>
+      <label for="email">Email Address:</label>
+      <input type="email" name="email" id="email" placeholder="youremail@email.com"  required/>
+      <label for="message">Message:</label>
+      <textarea name="message" placeholder="Type your message here." required></textarea>
+      <div class="btn">
+        <button class="submitBtn" type="submit">Submit</button>
+      </div>
+    </div>
+  </form>
+  <div class="contactContainer">
+    <div class="inputFields">
+      <h2><span>04.</span> Call Or Email</h2>
+      <div class="myDetails">
+      <h4>Anthony Mann</h4>
+      <h4>0428634295</h4>
+      <h4>anthonyjmann87@gmail.com</h4>
+    </div>   
+  </div>
+  </div>
+</div>
+<script src="js/app.js"></script>
+    </body>
 </html>

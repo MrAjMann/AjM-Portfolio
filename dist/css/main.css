@@ -23,10 +23,9 @@ nav {
   display: flex;
   justify-content: space-around;
   position: sticky;
-  background-color: rgba(136, 146, 176, 0.8);
-  z-index: 2;
   align-items: center;
   padding-top: 1rem;
+  z-index: 2;
   min-height: 8vh;
 }
 .menu-branding {
@@ -46,6 +45,7 @@ nav {
 
 #navbar {
   position: fixed;
+  background-color: rgba(136, 146, 176, 0.2);
 }
 .nav-item {
   text-align: center;
@@ -84,7 +84,7 @@ nav {
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: repeat(1fr, 3);
+  grid-template-rows: repeat(2fr, 3);
   grid-template-areas:
     'a   c   b'
     'a   c   b'
@@ -92,12 +92,13 @@ nav {
 }
 
 .c-section {
-  display: grid;
+  /* display: grid; */
   grid-area: c;
   width: 100%;
+  /* z-index: 0; */
 }
 .c-content {
-  height: 75vh;
+  height: 100vh;
   width: 80%;
   margin-left: 10em;
   letter-spacing: 8px;
@@ -152,8 +153,6 @@ nav {
 }
 
 l-section {
-  display: grid;
-  /* position: st; */
   grid-area: a;
   width: auto;
   justify-content: center;
@@ -179,57 +178,250 @@ l-section {
 .fab:hover {
   color: rgba(49, 255, 104, 0.8);
 }
-.about-me {
-  padding-top: 15%;
-  height: 100vh;
-  display: grid;
-  position: absolute;
-  left: 10%;
-  grid-template-columns: 1fr, 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: 'd   e';
+
+.aboutMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #8892b0;
 }
-.sub-Heading span {
-  color: #31ff68;
-  font-size: 0.9em;
-  letter-spacing: 2px;
+.aboutMeContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1100px;
+  overflow: hidden;
 }
-.sub-Heading {
-  font-size: 1.6em;
+.aboutMeContainer .aboutMeCard {
+  background: rgba(40, 55, 92, 0.4);
+  width: 920px;
+  margin: 20px;
+  padding: 40px 30px;
+  border-radius: 30px;
+}
+.aboutMeContainer .aboutMeCard .aboutPhoto {
+  position: relative;
+  float: right;
   text-align: justify;
-  color: #fff;
+  z-index: 0;
+  shape-outside: circle();
 }
-.about-text {
-  width: 100%;
-  font-size: 1.1em;
-  grid-area: d;
-  padding-right: 1em;
-  letter-spacing: 2px;
-  text-align: justify;
-}
-.about-text span {
-  font-weight: 600;
-  font-size: 1.8em;
-  color: rgb(180, 180, 180, 0.9);
-}
-.profile-photo {
-  grid-area: e;
-  opacity: 0.6;
-  padding-right: 12em;
-}
-.profile-photo img {
-  width: 356px;
+.aboutMeContainer .aboutMeCard .aboutPhoto img {
+  max-width: 333px;
   border-radius: 50%;
 }
-
-.currentTech span {
-  color: #31ff68;
-  letter-spacing: 0.5em;
-  font-size: 1.3em;
+.aboutMeContainer .aboutMeCard .aboutMeContent {
+  position: relative;
+  text-align: left;
 }
-.currentTech {
-  text-align: justify;
+.aboutMeContainer .aboutMeCard .aboutMeContent h2 {
   color: #fff;
+  font-weight: 900;
+  font-size: 1.8em;
+  letter-spacing: 4px;
+}
+.aboutMeContainer .aboutMeCard .aboutMeContent h2 span {
+  color: #31ff68;
+}
+.aboutMeContainer .aboutMeCard .aboutMeContent p {
+  color: #fff;
+  padding: 20px 0;
+  margin: 10px;
+}
+.aboutMeContainer .aboutMeCard .currentTech {
+  width: 320px;
+  margin: 5px;
+  background: rgba(40, 55, 92, 0.4);
+  padding: 20px 15px;
+  border-radius: 30px;
+}
+.aboutMeContainer .aboutMeCard .currentTech h4 {
+  padding: 15px 0;
+  color: #31ff68;
+  letter-spacing: 2px;
+}
+.aboutMeContainer .aboutMeCard .currentTech ul {
+  font-size: 16px;
+}
+.aboutMeContainer .aboutMeCard .currentTech ul li {
+  letter-spacing: 2px;
+  margin: 5px;
+}
+.aboutMeContainer .aboutMeCard .currentTech ul li span {
+  color: #31ff68;
+}
+
+.projects {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #8892b0;
+}
+.project-container {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1100px;
+}
+.project-container .projectCard {
+  background: rgba(40, 55, 92, 0.4);
+  align-items: center;
+  width: 920px;
+  margin: 20px;
+  padding: 20px 15px;
+  border-radius: 30px;
+}
+.project-container .projectCard:hover {
+  box-shadow: inset -6px -6px 10px rgba(255, 255, 255, 0.5),
+    inset 6px 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.project-container .projectCard .imgBx {
+  position: relative;
+  float: right;
+  z-index: 0;
+}
+.project-container .projectCard .imgBx img {
+  max-width: 100%;
+}
+.project-container .projectCard .projectContent {
+  position: relative;
+  text-align: center;
+}
+.project-container .projectCard .projectContent h2 {
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.6em;
+  letter-spacing: 4px;
+  text-align: left;
+}
+.project-container .projectCard .projectContent h2 span {
+  color: #31ff68;
+  padding: 0 40px;
+}
+.project-container .projectCard .projectContent p {
+  text-align: left;
+  color: #fff;
+  padding: 0 30px;
+  margin: 15px;
+}
+.project-container .projectCard .projectContent a {
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 15px;
+  border-radius: 40px;
+  color: #31ff68;
+  font-size: 16px;
+  text-decoration: none;
+  box-shadow: -2px -2px 7px rgba(255, 255, 255, 0.5),
+    2px 2px 7px rgba(0, 0, 0, 0.1);
+}
+.project-container .projectCard .projectContent a:hover {
+  box-shadow: inset -4px -4px 15px rgba(255, 255, 255, 0.5),
+    inset 4px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.project-container .projectCard a:hover span {
+  display: block;
+  transform: scale(0.98);
+}
+.project-container .projectCard:hover .imgBx,
+.project-container .projectCard:hover .projectContent {
+  transform: scale(0.98);
+}
+
+.contactForm {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #8892b0;
+}
+.contactContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1100px;
+}
+.contactContainer .inputFields {
+  background: rgba(40, 55, 92, 0.4);
+  align-items: center;
+  width: 520px;
+  margin: 20px;
+  padding: 20px 10px;
+  border-radius: 30px;
+}
+.inputFields label {
+  display: block;
+  padding: 0 10px;
+  font-size: 1em;
+}
+/* input[type='number']::-webkit-inner-spin-button {
+  display: none;
+}
+input[type='number']::-webkit-outer-spin-button {
+  display: none;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+} */
+.inputFields input,
+textarea {
+  display: inline-block;
+  width: 80%;
+  position: relative;
+  font-size: 1.3em;
+
+  margin: 5px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.inputFields .btn .submitBtn {
+  display: block;
+  padding: 10px 30px;
+  margin: 15px 50px;
+  border-radius: 40px;
+  color: #31ff68;
+  font-size: 16px;
+  text-decoration: none;
+}
+.inputFields .myDetails {
+  display: flex;
+  place-content: center;
+  height: 62vh;
+  width: 100%;
+  flex-direction: column;
+}
+.inputFields .myDetails h2 {
+  color: #fff;
+  padding: 30px 30px;
+  font-weight: 700;
+  font-size: 1.4em;
+  letter-spacing: 4px;
+  text-align: left;
+}
+.inputFields .myDetails h4 {
+  display: block;
+  text-align: left;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+}
+
+.contactForm .inputFields h2 {
+  color: #fff;
+  padding: 30px 0;
+  font-weight: 700;
+  font-size: 1.4em;
+  letter-spacing: 4px;
+  text-align: left;
+}
+.inputFields h2 span {
+  color: #31ff68;
 }
 
 /* Media Queries */
@@ -243,7 +435,7 @@ l-section {
     position: absolute;
     top: 10%;
     left: 10%;
-    text-align: left;
+    text-align: justify;
     margin-left: 5%;
     width: 80%;
   }
@@ -305,31 +497,37 @@ l-section {
     display: none;
   }
   .about-me {
+    /* display: grid;
+    height: 100vh;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+      'a1 a2'
+      'b1 b2'
+      'c1 c2'; */
     display: block;
-    /* padding-top: 100%; */
-    top: 80%;
-    margin-bottom: 1rem;
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    text-align: left;
+    /* margin-left: 5%; */
+    width: 80%;
   }
   .sub-Heading {
-    text-align: center;
+    grid-area: a1;
+    text-align: justify;
     margin-top: 2em;
   }
   .about-text {
+    grid-area: a2;
     text-align: justify;
-    width: 80%;
+    /* width: 80%; */
     margin-top: 1em;
     padding: 0.5rem;
   }
-  .profile-photo {
-    position: absolute;
-    top: 15%;
-    left: 1%;
-    /* border: 2px solid red; */
-    width: fit-content;
-    padding: 3px;
-  }
-  .profile-photo img {
-    width: 120px;
+  .profilePhoto {
+    margin: 10%;
+    width: 50%;
   }
   /* End 768px */
 }
