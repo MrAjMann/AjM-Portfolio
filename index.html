@@ -35,17 +35,17 @@
         <!-- Currently Setup to change pages -->
         <!-- Links need to be changed to a click function for smooth scrolling -->
         <li class="nav-item">
-          <a href="/home.html" class="nav-link">Home</a>
+          <a href="#home" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
-          <a href="/about.html" class="nav-link">About</a>
+          <a href="#about" class="nav-link">About</a>
         </li>
         <li class="nav-item">
-          <a href="/projects.html" class="nav-link">Projects</a>
+          <a href="#projects" class="nav-link">Projects</a>
         </li>
         <!-- Need to add a blog page link here -->
         <li class="nav-item">
-          <a href="/contact.html" class="nav-link">Contact</a>
+          <a href="#contact" class="nav-link">Contact</a>
         </li>
         <li class="nav-item nav-btn">
           <button class="nav-btn-item">Resume</button>
@@ -58,21 +58,9 @@
       </div>
     </nav>
     <main>
-<div class="grid-container">
-        <div class="l-Section ">
-          <div class="icons" id="sideIcons">
-            <ul class=icon-list>
-              <li class="arrow"><i class="fas fa-angle-up fa-2x"></i></li>
-              <li><a href="https://github.com/MrAjMann" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/anthonyjmann87" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
-              <li><a href="https://twitter.com/MyCodingJourne3" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
-              <li><a href="mailto:anthonyjmann87@gmail.com"><i class="fas fa-at fa-2x"></i></a></li>
-              <li class="arrow"><i class="fas fa-angle-down fa-2x"></i></li>
-            </ul >
-          </div>
-        </div>
-        <div class="c-Section">
-          <div class="c-content">
+<section class="heroSection" id="home">
+        <div class="heroContainer">
+          <div class="heroCard">
             <h2 class="upper-tag"><span>Hi</span> my name is,</h2>
             <h1 class="m-heading">Anthony Mann</h1>
             <h2 class="lower-tag"><span>&</span> This is my story..</h2 class="lower-tag">
@@ -81,19 +69,17 @@
               <button class="cta-btn">Get in touch</button>
             </div>
           </div>
-        </div> 
+        </section> 
         </main>
-  <section class="aboutMe"> 
+  <section class="aboutMe" id="about"> 
     <div class="aboutMeContainer">
+      <h2 class="sub-Heading"><span> 01.</span> About Me</h2>
       <div class="aboutMeCard">
         <div class="aboutPhoto">
           <img src="../Assets/Me336px.png" class="profilePhoto" alt="My Photo">
         </div>
         <div class="aboutMeContent">
-          <h2 class="sub-Heading"><span> 01.</span> About Me</h2>
-          <p class="about-text"> <span>Hi</span>, I'm an aspiring Fullstack developer currently based in Toowoomba, QLD however I am moving to Brisbane at the end of Febuary 2020. 
-          <br>
-          So for the last few years I have been working in the Aged care sector and it is my main reason for this change, I wish to develop applications and web based services within the Health Care industry to provide support for nursing staff, patients and thier families.
+          <p class="about-text"> <span>Hi</span>, I'm an aspiring Fullstack developer currently based in Toowoomba, QLD however I am moving to Brisbane at the end of Febuary 2020. So for the last few years I have been working in the Aged care sector and it is my main reason for this change, I wish to develop applications and web based services within the Health Care industry to provide support for nursing staff, patients and thier families.
           </p>
           <div class="currentTech">
             <h4>Technologies Used</h4>
@@ -108,15 +94,16 @@
       </div>
     </div>
 </section>
-<section class="projects">
+<section class="projects" id="projects">
   <div class="project-container">
+    <h2><span>02.</span> Projects</h2>
     <!-- First Card -->
     <div class="projectCard">
       <div class="imgBx">
         <a href=""><img src="../landingPage.png" alt=""></a>
       </div>
     <div class="projectContent">
-      <h2><span>01.</span>Project A</h2>
+      <h2><span>Project Name</span></h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
         Iusto veniam dolorum molestias, ea hic debitis quis quas.
       </p>
@@ -142,19 +129,19 @@
   ------------------------------------------------------------
 
 -->
-<div class="contactForm">
-  <form class="contactContainer" name="contactMe" action="POST" data-netlify="true">
-    <div class="inputFields">
-      <h2><span>03.</span> Contact Me </h2>
+<div class="contactForm" id="contact">
+<form class="contactContainer" name="contactMe" action="POST" data-netlify="true">
+    <h2><span>03.</span> Contact Me </h2>
+    <div class="contactCard">
       <label for="name">Name:</label>
-      <input type="text" name="name" id="name"placeholder="Your Name" required/>
+      <input type="text"  name="name" id="name"placeholder="Your Name" required/>
       <label for="tel">Phone Number:</label>
       <input type="tel" name="tel" id="phone" placeholder="0428634295" maxlength="10" required/>
       <label for="email">Email Address:</label>
       <input type="email" name="email" id="email" placeholder="youremail@email.com"  required/>
       <label for="message">Message:</label>
       <textarea name="message" placeholder="Type your message here." required></textarea>
-      <div class="btn">
+      <div class="contactBtn">
         <button class="submitBtn" type="submit">Submit</button>
       </div>
     </div>
@@ -163,7 +150,7 @@
 
 <footer class="footerSection">
     <div class="footerContainer">
-      <div class="myDetails">
+      <div class="footerCard">
         <ul class="footerSocialLinks">
           <li><a href="https://github.com/MrAjMann" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
           <li><a href="https://www.linkedin.com/in/anthonyjmann87" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
@@ -177,6 +164,6 @@
   </div>
   </div>
 </footer>
-<script src="js/app.js"></script>
+<script src="dist/js/app.js"></script>
     </body>
 </html>
