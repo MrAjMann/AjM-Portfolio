@@ -2,12 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* overflow: hidden; */
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: raleway;
+  font-family: 'Raleway', sans-serif;
   background-color: #8892b0;
   color: #fff;
   font-size: 1em;
@@ -28,42 +27,56 @@ nav {
   position: sticky;
   align-items: right;
   padding-top: 1rem;
+  /* width: 82px; */
   z-index: 2;
   min-height: 8vh;
 }
 .menu-branding {
-  position: fixed;
-  left: 5%;
+  position: absolute;
+  left: 7%;
 }
 
 .menu-nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  margin-left: 63%;
+  margin-right: 5%;
 }
 
-#navbar {
-  position: fixed;
-}
 .nav-item {
-  text-align: center;
+  color: #31ff68;
+  cursor: pointer;
+  /* right: 1em; */
 }
 .nav-item a {
+  margin: 0.5em;
+  font-size: 1.4rem;
   letter-spacing: 1px;
-  font-weight: bold;
+  font-weight: 400;
+  /* border: 2px solid rgba(255, 255, 255, 1); */
 }
 .nav-item a:hover {
   color: #31ff68;
+  border-radius: 20px;
+  box-shadow: inset -6px -6px 15px rgba(255, 255, 255, 0.5), inset 4px 4px 15px rgba(0, 0, 0, 0.1),
+    -6px -6px 15px rgba(255, 255, 255, 0.5), 4px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.nav-item .nav-btn-item {
-  font-size: 1rem;
-  color: #31ff68;
-  cursor: pointer;
-  height: 30px;
-  width: 82px;
-  border: 2px solid #31ff68;
-  border-radius: 10%;
+.nav-btn-item {
+  justify-content: center;
+  display: inline-flex;
+  padding: 0 1em;
+  border-radius: 1em;
   background: transparent;
+  color: #31ff68;
+  font-weight: 400;
+  border: 2px solid rgba(255, 255, 255, 1);
+  font-size: 1.4em;
+  text-decoration: none;
+  box-shadow: -3px -3px 16px rgba(255, 255, 255, 0.1), 2px 2px 7px rgba(0, 0, 0, 0.1);
+}
+.nav-btn-item:hover {
+  box-shadow: inset -4px -4px 15px rgba(255, 255, 255, 0.5), inset 4px 4px 15px rgba(0, 0, 0, 0.1);
 }
 .burger {
   display: none;
@@ -93,6 +106,7 @@ nav {
   background: rgba(180, 180, 180, 0.5);
   margin-top: 5%;
   padding: 1em;
+  text-align: center;
   border: 0.8em solid rgba(255, 255, 255, 0.5);
   border-radius: 30px;
 }
@@ -105,21 +119,22 @@ nav {
 .upper-tag span {
   font-size: 2.5em;
   font-weight: 900;
-  color: rgba(180, 180, 180, 0.5);
+  color: rgba(0, 255, 21, 0.5);
 }
 .upper-tag {
+  text-align: center;
   margin-top: 2.5%;
   font-size: 2.5em;
-  padding-top: 5%;
   color: #fff;
 }
 
 .lower-tag span {
   font-size: 2.5em;
   font-weight: 900;
-  color: rgba(180, 180, 180, 0.5);
+  color: rgba(0, 255, 21, 0.5);
 }
 .lower-tag {
+  text-align: center;
   margin-top: 2.5%;
   color: #fff;
   font-size: 2.5em;
@@ -127,13 +142,13 @@ nav {
 .c-para {
   color: #fff;
   padding: 1em 0;
-  width: 60%;
-  text-align: justify;
+  text-align: center;
   font-size: 1.8em;
 }
 .heroBtn {
   display: inline-block;
   padding: 0.6em 2em;
+  margin-bottom: 2.5%;
   border-radius: 2em;
   background: transparent;
   color: #31ff68;
@@ -192,7 +207,7 @@ nav {
 .aboutMeContent p {
   color: #fff;
   padding: 1em 0;
-  text-align: justify;
+  text-align: center;
   font-size: 1.8em;
 }
 .currentTech {
@@ -212,11 +227,11 @@ nav {
 }
 .currentTech ul {
   font-size: 1.4em;
-  text-align: justify;
+  text-align: center;
 }
 .currentTech ul li {
   letter-spacing: 2px;
-  text-align: justify;
+  text-align: center;
 }
 .currentTech ul li span {
   color: #31ff68;
@@ -281,7 +296,7 @@ nav {
   padding: 0 40px;
 }
 .projectContent p {
-  text-align: left;
+  text-align: center;
   color: #fff;
   padding: 0 30px;
   margin: 15px;
@@ -312,10 +327,13 @@ nav {
 
 .contactForm {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: left;
+  width: 100%;
   margin-top: 5%;
+  margin-left: 5em;
 }
 .contactContainer {
+  width: 100vw;
   max-width: 90%;
   border-bottom: rgba(180, 180, 180, 0.9) solid 0.95em;
   border-radius: 30px;
@@ -403,10 +421,51 @@ textarea {
 .footerContactLinks li:first-child {
   margin: 0.5em 0;
 }
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .menu-nav {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 50%;
+    /* margin-right: 5%; */
+  }
 
+  .heroSection {
+    margin-top: 3em;
+  }
+  .projects {
+    margin-top: 10em;
+  }
+}
+@media screen and (min-device-width: 931px) and (max-device-width: 1199px) {
+  .menu-nav {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 40%;
+    /* margin-right: 5%; */
+  }
+  .heroSection {
+    margin-top: 2em;
+  }
+  .projects {
+    margin-top: 15em;
+  }
+}
 /* Media Queries */
-
-@media screen and (max-width: 768px) {
+@media screen and (min-device-width: 769px) and (max-device-width: 930px) {
+  .menu-nav {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 30%;
+    /* margin-right: 5%; */
+  }
+  .aboutMe {
+    margin-top: 5%;
+  }
+  .projects {
+    margin-top: 35%;
+  }
+}
+@media screen and (min-width: 634px) and (max-width: 768px) {
   /* * {
     overflow-x: hidden;
   } */
@@ -416,6 +475,8 @@ textarea {
     position: absolute;
     top: 10%;
     z-index: 2;
+    width: 40%;
+    text-align: center;
     right: 10%;
   }
   .menu-nav li {
@@ -427,6 +488,10 @@ textarea {
     cursor: pointer;
     position: absolute;
     right: 10%;
+  }
+  #navbar {
+    display: inline-block;
+    margin-top: 10%;
   }
   .menu-branding {
     display: none;
@@ -475,7 +540,7 @@ textarea {
   /* End Hero Section */
   /* About Me Section */
   .aboutMe {
-    margin-top: -55%;
+    margin-top: -40%;
   }
   .aboutMeContainer {
     height: fit-content;
@@ -511,7 +576,7 @@ textarea {
 
   /* Projects Section */
   .projects {
-    margin-top: 40%;
+    margin-top: -20%;
   }
   .projectContainer:first-child {
     margin-top: 20%;
@@ -537,6 +602,7 @@ textarea {
 
   .contactForm {
     margin-top: 10%;
+    margin-left: 1.5em;
   }
   .contactContainer {
     height: fit-content;
@@ -564,6 +630,171 @@ textarea {
   /* End 768px */
 }
 
+@media screen and (min-device-width: 330px) and (max-device-width: 533px) {
+  .menu-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10%;
+    width: 40%;
+    text-align: center;
+    z-index: 2;
+    right: 15%;
+  }
+  .nav-item .nav-link {
+    font-size: 0.8em;
+  }
+  .nav-btn-item {
+    font-size: 0.8em;
+  }
+  .menu-nav li {
+    font-size: 0.8em;
+    padding: 1em;
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 10%;
+  }
+  #navbar {
+    display: inline-block;
+  }
+  .menu-branding {
+    display: none;
+  }
+  .heroSection {
+    margin-top: 2em;
+  }
+  .heroContainer {
+    height: fit-content;
+  }
+  .m-heading {
+    font-size: 1em;
+    text-align: center;
+  }
+  .upper-tag span {
+    text-align: center;
+    font-size: 1em;
+  }
+  .upper-tag {
+    text-align: center;
+    font-size: 0.8em;
+  }
+  .lower-tag span {
+    text-align: center;
+    font-size: 1em;
+  }
+  .lower-tag {
+    text-align: center;
+    font-size: 0.8em;
+  }
+  .c-para {
+    font-size: 0.6em;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  .Btn {
+    display: flex;
+    justify-content: center;
+  }
+  .heroBtn {
+    font-size: 0.8em;
+  }
+  /* End Hero Section */
+
+  /* About Me Section */
+  .aboutMe {
+    margin-top: -20em;
+  }
+  .aboutMeContainer {
+    height: fit-content;
+  }
+  .aboutPhoto {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .aboutPhoto img {
+    margin: 0;
+    shape-outside: circle();
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+  .aboutMeContainer h2 {
+    text-align: center;
+    font-size: 1em;
+  }
+  .aboutMeContent p {
+    font-size: 0.6em;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  .currentTech h4 {
+    font-size: 0.8em;
+  }
+  .currentTech ul {
+    font-size: 0.6em;
+  }
+  /* End About Me Section */
+
+  /* Projects Section */
+  .projects {
+    margin-top: -5em;
+  }
+  .projectContainer:first-child {
+    margin-top: 0;
+  }
+  .projectContainer {
+    height: fit-content;
+  }
+  .projectContainer h2 {
+    text-align: center;
+    font-size: 1em;
+  }
+  .projectContent h4 {
+    text-align: center;
+    font-size: 0.8em;
+  }
+  .projectBtn {
+    font-size: 0.8em;
+  }
+
+  /* End Projects Section */
+
+  /* Contact Section */
+
+  .contactForm {
+    margin-top: 1em;
+    margin-left: 1.01em;
+  }
+  .contactContainer {
+    height: fit-content;
+  }
+  .contactContainer h2 {
+    text-align: center;
+    font-size: 1em;
+  }
+  .contactCard label {
+    font-size: 0.8em;
+  }
+  .contactCard input,
+  textarea {
+    font-size: 0.6em;
+  }
+
+  .contactCard textarea {
+    height: 100%;
+  }
+  .contactBtn {
+    margin-top: 0;
+    font-size: 0.8em;
+  }
+}
+
 /* Menu Animation For mobile view */
 .menu-nav-active {
   transform: translateX(0%);
@@ -577,7 +808,7 @@ textarea {
   to {
     opacity: 1;
     transform: translateX(0px);
-    background: rgba(136, 146, 176, 0.5);
+    background: rgba(101, 113, 150, 0.5);
   }
 }
 
