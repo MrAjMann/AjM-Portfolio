@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* overflow: hidden; */
   scroll-behavior: smooth;
 }
 
@@ -124,25 +125,23 @@ nav {
   font-size: 2.5em;
 }
 .c-para {
-  /* background: rgba(180, 180, 180, 0.5); */
   color: #fff;
   padding: 1em 0;
   width: 60%;
   text-align: justify;
   font-size: 1.8em;
 }
-.cta-btn {
+.heroBtn {
   display: inline-block;
-  padding: 0.5em 2em;
-  margin-top: 5%;
+  padding: 0.6em 2em;
   border-radius: 2em;
   background: transparent;
   color: #31ff68;
-  font-weight: 900;
+  font-weight: 400;
   border: 2px solid rgba(255, 255, 255, 1);
-  font-size: 2em;
+  font-size: 1.8em;
   text-decoration: none;
-  box-shadow: -6px -6px 12px rgba(255, 255, 255, 0.2), 2px 2px 7px rgba(0, 0, 0, 0.1);
+  box-shadow: -6px -6px 12px rgba(255, 255, 255, 0.1), 2px 2px 7px rgba(0, 0, 0, 0.1);
 }
 .cta-btn:hover {
   box-shadow: inset -4px -4px 15px rgba(255, 255, 255, 0.5), inset 4px 4px 15px rgba(0, 0, 0, 0.1);
@@ -229,20 +228,20 @@ nav {
   justify-content: space-evenly;
   margin-top: 5%;
 }
-.project-container {
+.projectContainer {
   max-width: 90%;
   border-bottom: rgba(180, 180, 180, 0.9) solid 0.95em;
   border-radius: 30px;
   padding-bottom: 1em;
 }
-.project-container h2 {
+.projectContainer h2 {
   color: #fff;
   font-weight: 900;
   font-size: 3em;
   margin: 0.3em;
   letter-spacing: 0.2em;
 }
-.project-container h2 span {
+.projectContainer h2 span {
   color: #31ff68;
 }
 .projectCard {
@@ -257,37 +256,37 @@ nav {
   box-shadow: inset -6px -6px 10px rgba(255, 255, 255, 0.5), inset 6px 6px 20px rgba(0, 0, 0, 0.05);
 }
 
-.project-container .projectCard .imgBx {
+.projectCard .imgBx {
   border-radius: 30px;
   border-bottom: 0.2em solid rgba(255, 255, 255, 0.5);
   z-index: 0;
 }
-.project-container .projectCard .imgBx img {
+.projectCard .imgBx img {
   max-width: 100%;
 }
-.project-container .projectCard .projectContent {
+.projectContent {
   position: relative;
   text-align: center;
   padding: 1em 0;
 }
-.project-container .projectCard .projectContent h2 {
+.projectContent h2 {
   color: #fff;
   font-weight: 900;
   font-size: 1.6em;
   letter-spacing: 4px;
   text-align: left;
 }
-.project-container .projectCard .projectContent h2 span {
+.projectContent h2 span {
   color: #31ff68;
   padding: 0 40px;
 }
-.project-container .projectCard .projectContent p {
+.projectContent p {
   text-align: left;
   color: #fff;
   padding: 0 30px;
   margin: 15px;
 }
-.project-container .projectCard .projectContent a {
+.projectBtn {
   display: inline-block;
   padding: 0.6em 2em;
   border-radius: 2em;
@@ -295,19 +294,19 @@ nav {
   color: #31ff68;
   font-weight: 400;
   border: 2px solid rgba(255, 255, 255, 1);
-  font-size: 1.6em;
+  font-size: 1.8em;
   text-decoration: none;
   box-shadow: -6px -6px 12px rgba(255, 255, 255, 0.1), 2px 2px 7px rgba(0, 0, 0, 0.1);
 }
-.project-container .projectCard .projectContent a:hover {
+.projectContent a:hover {
   box-shadow: inset -4px -4px 15px rgba(255, 255, 255, 0.5), inset 4px 4px 15px rgba(0, 0, 0, 0.1);
 }
-.project-container .projectCard a:hover span {
+.projectCard a:hover span {
   display: block;
   transform: scale(0.98);
 }
-.project-container .projectCard:hover .imgBx,
-.project-container .projectCard:hover .projectContent {
+.imgBx,
+.projectContent {
   transform: scale(0.98);
 }
 
@@ -346,19 +345,14 @@ textarea {
 }
 
 .contactBtn {
-  text-align: center;
-}
-.contactBtn .submitBtn {
   display: inline-block;
-  padding: 0.5em 2.5em;
+  padding: 0.6em 2em;
   border-radius: 2em;
-  margin-left: -1em;
   background: transparent;
   color: #31ff68;
   font-weight: 400;
   border: 2px solid rgba(255, 255, 255, 1);
-  font-size: 1.6em;
-  margin-top: 2%;
+  font-size: 1.8em;
   text-decoration: none;
   box-shadow: -6px -6px 12px rgba(255, 255, 255, 0.1), 2px 2px 7px rgba(0, 0, 0, 0.1);
 }
@@ -391,30 +385,31 @@ textarea {
   border: 0.8em solid rgba(255, 255, 255, 0.5);
   border-radius: 30px;
 }
-.footerCard .footerSocialLinks {
+.footerSocialLinks {
   display: flex;
   justify-content: center;
 }
-.footerCard .footerSocialLinks a {
+.footerSocialLinks a {
   margin: 0.5em;
 }
-.footerCard .footerSocialLinks a:hover,
-.footerCard .footerContactLinks a:hover {
+.footerSocialLinks a:hover,
+.footerContactLinks a:hover {
   color: #31ff68;
 }
-.footerCard .footerContactLinks li {
+.footerContactLinks li {
   display: flex;
   justify-content: space-around;
 }
-.footerCard .footerContactLinks li:first-child {
+.footerContactLinks li:first-child {
   margin: 0.5em 0;
 }
+
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
-  * {
+  /* * {
     overflow-x: hidden;
-  }
+  } */
   .menu-nav {
     display: flex;
     flex-direction: column;
@@ -437,9 +432,135 @@ textarea {
     display: none;
   }
 
-  .aboutPhoto {
-    display: none;
+  /* Hero Section */
+  .heroSection {
+    margin-top: 5%;
   }
+  .heroContainer {
+    height: fit-content;
+  }
+  .m-heading {
+    font-size: 2em;
+    text-align: center;
+  }
+  .upper-tag span {
+    text-align: center;
+    font-size: 1.6em;
+  }
+  .upper-tag {
+    text-align: center;
+    font-size: 1.4em;
+  }
+  .lower-tag span {
+    text-align: center;
+    font-size: 1.6em;
+  }
+  .lower-tag {
+    text-align: center;
+    font-size: 1.4em;
+  }
+  .c-para {
+    font-size: 1.2em;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  .Btn {
+    display: flex;
+    justify-content: center;
+  }
+  .heroBtn {
+    font-size: 1.4em;
+  }
+  /* End Hero Section */
+  /* About Me Section */
+  .aboutMe {
+    margin-top: -55%;
+  }
+  .aboutMeContainer {
+    height: fit-content;
+  }
+  .aboutPhoto {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .aboutPhoto img {
+    margin: -1em;
+    shape-outside: circle();
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+  .aboutMeContainer h2 {
+    text-align: center;
+    font-size: 2em;
+  }
+  .aboutMeContent p {
+    font-size: 1.2em;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  .currentTech h4 {
+    font-size: 1.6em;
+  }
+  .currentTech ul {
+    font-size: 1.2em;
+  }
+  /* End About Me Section */
+
+  /* Projects Section */
+  .projects {
+    margin-top: 40%;
+  }
+  .projectContainer:first-child {
+    margin-top: 20%;
+  }
+  .projectContainer {
+    height: fit-content;
+  }
+  .projectContainer h2 {
+    text-align: center;
+    font-size: 2em;
+  }
+  .projectContent h4 {
+    text-align: center;
+    font-size: 1.6em;
+  }
+  .projectBtn {
+    font-size: 1.4em;
+  }
+
+  /* End Projects Section */
+
+  /* Contact Section */
+
+  .contactForm {
+    margin-top: 10%;
+  }
+  .contactContainer {
+    height: fit-content;
+  }
+  .contactContainer h2 {
+    text-align: center;
+    font-size: 2em;
+  }
+  .contactCard label {
+    font-size: 1.4em;
+  }
+  .contactCard input,
+  textarea {
+    font-size: 1.2em;
+  }
+
+  .contactCard textarea {
+    height: 100%;
+  }
+  .contactBtn {
+    margin-top: 0.5em;
+    font-size: 1.4em;
+  }
+  /* End Contact Section */
   /* End 768px */
 }
 
