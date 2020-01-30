@@ -7,9 +7,10 @@
 
 body {
   font-family: 'Raleway', sans-serif;
-  background-color: #8892b0;
+  /* background-color: #8892b0; */
+  background: #507dbc;
   color: #fff;
-  font-size: 1em;
+  font-size: 16px;
   margin: 0.5em;
 }
 
@@ -18,7 +19,7 @@ li {
 }
 a {
   text-decoration: none;
-  color: #fff;
+  color: #eeeeee;
 }
 
 nav {
@@ -103,7 +104,7 @@ nav {
   padding-bottom: 1em;
 }
 .heroCard {
-  background: rgba(180, 180, 180, 0.5);
+  /* background: rgba(180, 180, 180, 0.5); */
   margin-top: 5%;
   padding: 1em;
   text-align: center;
@@ -175,7 +176,7 @@ nav {
   padding-bottom: 1em;
 }
 .aboutMeCard {
-  background: rgba(180, 180, 180, 0.5);
+  /* background: rgba(180, 180, 180, 0.5); */
   margin-top: 5%;
   padding: 1em;
   border: 0.8em solid rgba(255, 255, 255, 0.5);
@@ -212,7 +213,8 @@ nav {
 }
 .currentTech {
   max-width: 100%;
-  background: #8892b0;
+  /* background: #8892b0; */
+  background: #46237a;
   margin: 2%;
   text-align: center;
   padding: 2em;
@@ -260,7 +262,7 @@ nav {
   color: #31ff68;
 }
 .projectCard {
-  background: rgba(180, 180, 180, 0.5);
+  /* background: rgba(180, 180, 180, 0.5); */
   margin-top: 5%;
   padding: 1em;
   border: 0.8em solid rgba(255, 255, 255, 0.5);
@@ -340,7 +342,7 @@ nav {
   padding-bottom: 1em;
 }
 .contactCard {
-  background: rgba(180, 180, 180, 0.5);
+  /* background: rgba(180, 180, 180, 0.5); */
   margin-top: 5%;
   padding: 1em;
   border: 0.8em solid rgba(255, 255, 255, 0.5);
@@ -397,7 +399,7 @@ textarea {
   padding-bottom: 1em;
 }
 .footerCard {
-  background: rgba(180, 180, 180, 0.5);
+  /* background: rgba(180, 180, 180, 0.5); */
   margin-top: 5%;
   padding: 1em;
   border: 0.8em solid rgba(255, 255, 255, 0.5);
