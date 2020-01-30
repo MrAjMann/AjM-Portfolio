@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-sitemap: C:\Users\antho\Documents\GitHub\AjM-Portfolio\sitemap.xml
+sitemap: https://anthonyjmann.netlify.com/sitemap.xml
