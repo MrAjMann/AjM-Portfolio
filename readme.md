@@ -1,5 +1,6 @@
-Personal Profile
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1804b5e7-817e-4b0e-958a-edc3c14dd694/deploy-status)](https://app.netlify.com/sites/anthonyjmann/deploys)
 
+Personal Profile
 
 ```
 I'm a full stack developer in the making based in Toowoomba,
@@ -8,6 +9,7 @@ websites and workflow automation applications
 ```
 
 # 1-Landing Page
+
 ![LandingPage](landingPage.png)
 
 # 2-About Section
@@ -17,13 +19,16 @@ websites and workflow automation applications
 # 4-Contact Section
 
 # Fonts
+
 ```
 Primary Heading - Roboto = <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
 Primary Text - Raleway = <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
 ```
+
 ## - Colors
+
 ```
 <!-- Font - Colors -->
     textPrimary     = #fff
@@ -36,6 +41,7 @@ Primary Text - Raleway = <link href="https://fonts.googleapis.com/css?family=Ral
 ```
 
 Social Links
+
 ```
 [Twitter](https://twitter.com/MyCodingJourne3)
 [Github](https://github.com/MrAjMann)
