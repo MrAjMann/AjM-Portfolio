@@ -1,0 +1,47 @@
+@include laptop {
+  body {
+    display: block;
+    width: 100%;
+  }
+  .menu {
+    padding: 0;
+    align-items: center;
+    text-align: center;
+    .menuNav {
+      z-index: 3;
+      position: fixed;
+      right: 35px;
+      display: inline-flex;
+      justify-content: center;
+      .navItem {
+        position: relative;
+        margin: 1em;
+      }
+      .btnContainer {
+        margin-top: 0.4em;
+      }
+    }
+  }
+
+  .mainContent {
+    margin: 3em;
+    height: 100%;
+    position: initial;
+
+    .heroSection {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      overflow-y: hidden;
+      .heroContainer {
+        margin-bottom: 3em;
+        h1 {
+          font-size: 3em;
+        }
+        h2 {
+          font-size: 1.8em;
+        }
+      }
+    }
+  }
+}

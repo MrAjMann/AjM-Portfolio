@@ -1,86 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="body">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="Description" content="The Personal Portfolio of Anthony J Mann created in January 2020 .">
-    <link
-    href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
-    rel="stylesheet"
-    />
-    <link rel="stylesheet" href="dist/css/main.css" />
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@600;700&display=swap" rel="stylesheet">
+    <!--  -->
+    <link rel="stylesheet" href="css/main.css" />
     <title>Anthony Mann Portfolio</title>
+    <script src="https://kit.fontawesome.com/05e9fd9dda.js" crossorigin="anonymous"></script>
   </head>
   
   <body>
-    <nav class="menu">
-      <!-- menu branding is for the logo -->
-      <div class="menu-branding" id="brand">
-        <img
-        src="/Assets/brandLogo.svg"
-        class="brand-logo"
-        alt="Branding Logo"
-        />
+    <header>
+      <div class="burgerMenu">
+        <div class="btnLine"></div>
+        <div class="btnLine"></div>
+        <div class="btnLine"></div>
       </div>
-      <!-- The List of links for the navigation -->
-      <ul class="menu-nav" id="navbar">
-        <!-- Currently Setup to change pages -->
-        <!-- Links need to be changed to a click function for smooth scrolling -->
-        <li class="nav-item">
-          <a href="#home" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="#about" class="nav-link">About</a>
-        </li>
-        <li class="nav-item">
-          <a href="#projects" class="nav-link">Projects</a>
-        </li>
-        <!-- Need to add a blog page link here -->
-        <li class="nav-item">
-          <a href="#contact" class="nav-link">Contact</a>
-        </li>
-        <li class="nav-item nav-btn">
-          <button class="nav-btn-item">Resume</button>
-        </li>
-      </ul>
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-    </nav>
-    <main>
+      <nav class="menu">
+        <!-- menu branding is for the logo -->
+        <div class="menuPortrait">
+
+          <div class="portrait"></div>
+        </div>
+  
+        <!-- The List of links for the navigation -->
+        <ul class="menuNav" id="navbar">
+          <li class="navItem">
+            <a href="#home" class="navLink">Home</a>
+          </li>
+          <li class="navItem">
+            <a href="#about" class="navLink">About</a>
+          </li>
+          <li class="navItem">
+            <a href="#projects" class="navLink">Projects</a>
+          </li>
+          <!-- Need to add a blog page link here -->
+          <li class="navItem">
+            <a href="#contact" class="navLink">Contact</a>
+          </li>
+          <li class="btnContainer">
+            <a class="btn" href="./Assets/Anthony Mann CV 2020.pdf" download="AnthonyMannResume">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+
+    
+    <main class="mainContent">
       <section class="heroSection" id="home">
         <div class="heroContainer">
-          <div class="heroCard">
-            <h2 class="upper-tag"><span>Hi</span> my name is,</h2>
-            <h1 class="m-heading">Anthony Mann</h1>
-            <h2 class="lower-tag"><span>&</span> This is my story..</h2 class="lower-tag">
-              <p class="c-para">Fullstack developer with a passion for designing and developing small websites
-                and workflow automation applications. </p>
-                <div class="Btn">
-                  <button class="heroBtn">Get in touch...</button>
-                </div>
+          <h2><span>Hi</span>, My name is</h2>
+          <h1>Anthony Mann</h1>
+          <h2><span>&</span> This is my story..</h2>
+            <p class="heroText"> <span> Fullstack developer</span> with a passion for designing and developing small websites
+              and workflow automation applications. </p>
+              <div class="btnContainer">
+              <a class="btn" href="" target="_blank" rel="nofollow"><span>Let's work together</a></div>
+              <div class="socialMenu">
+                <ul>
+                  <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a></li>
+                  <li><a href="#" class="email"><i class="fas fa-at "></i></a></li>
+                  <li><a href="#" class="github"><i class="fab fa-github "></i></a></li>
+                </ul>
               </div>
             </div>
           </section> 
-        </main>
+        
         <section class="aboutMe" id="about"> 
           <div class="aboutMeContainer">
-            <h2 class="sub-Heading"><span> 01.</span> About Me</h2>
-            <div class="aboutMeCard">
-              <div class="aboutPhoto">
-                <img src="../Assets/Me336px.png" class="profilePhoto" alt="My Photo">
-              </div>
+            <h2><span> 01.</span> About Me</h2>
               <div class="aboutMeContent">
-                <p class="about-text"> <span>Hey</span>, I'm Anthony an aspiring Fullstack developer currently based in Toowoomba, QLD however I am moving to Brisbane at the end of Febuary 2020. So for the last few years I have been working in the Aged care sector and it is my main reason for this change, I wish to develop applications and web based services within the Health Care industry to provide support for nursing staff, patients and thier families.
+                <p class="about-text"> Hey, I'm Anthony an aspiring <span>Fullstack developer</span> currently based in Toowoomba, QLD however I am moving to Brisbane by the end of March 2020. <br>
+                  So for the last few years I have been working in the Aged care sector and it is my main reason for this change, I wish to develop applications and web based services within the Health Care industry to provide support for nursing staff, patients and thier families.
                 </p>
                 <div class="currentTech">
                   <h4>Technologies Used</h4>
                   <ul class="techList">
                     <li> <span> > </span> HTML & CSS</li> 
                     <li> <span> > </span> Javascript (ES6)</li>
+                    <li> <span> > </span> Ruby</li>
                     <li> <span> > </span> Python</li>
                     <li> <span> > </span> Github</li>
                   </ul>
@@ -91,34 +96,34 @@
         </section>
         <section class="projects" id="projects">
           <div class="projectContainer">
-    <h2><span>02.</span>Projects</h2>
+    <h2><span>02.</span> Projects</h2>
     <!-- First Card -->
     <div class="projectCard">
-      <div class="imgBx">
+      <h4><span>Project Name</span></h4>
+      <div class="item">
         <a href=""><img src="../landingPage.png" alt="Project Photo"></a>
       </div>
       <div class="projectContent">
-        <h4><span>Project Name</span></h4>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           Iusto veniam dolorum molestias, ea hic debitis quis quas.
         </p>
-        <div class="Btn">
-          <button class="projectBtn">Check it out...</button>
+        <div class="btnContainer">
+          <button class="btn projectBtn">Check it out...</button>
         </div>
       </div>
     </div>
     <!-- Second Card -->
     <div class="projectCard">
-      <div class="imgBx">
+      <h4><span>Project Name</span></h4>
+      <div class="item">
         <a href=""><img src="../landingPage.png" alt="Project Photo"></a>
       </div>
       <div class="projectContent">
-        <h4><span>Project Name</span></h4>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           Iusto veniam dolorum molestias, ea hic debitis quis quas.
         </p>
-        <div class="Btn">
-          <button class="projectBtn">Check it out...</button>
+        <div class="btnContainer">
+          <button class="btn projectBtn">Check it out...</button>
         </div>
       </div>
     </div>
@@ -129,39 +134,38 @@
   ------------------------------------------------------------
   
 -->
-<div class="contactForm" id="contact">
-  <form class="contactContainer" name="contactMe" action="POST" data-netlify="true">
-    <h2><span>03.</span> Contact Me </h2>
-    <div class="contactCard">
-      <label for="name">Name:</label>
-      <input type="text"  name="name" id="name"placeholder="Your Name" required/>
-      <label for="tel">Phone Number:</label>
-      <input type="tel" name="tel" id="tel" placeholder="0428634295" maxlength="10" required/>
-      <label for="email">Email Address:</label>
-      <input type="email" name="email" id="email" placeholder="youremail@email.com"  required/>
-      <label for="textarea">Message:</label>
-      <textarea type="textarea" name="textarea" id="textarea"  placeholder="Type your message here." required></textarea>
-      <div class="Btn">
-        <button class="contactBtn">Send Message...</button>
+<section class="contactSection">
+    <form class="contactContainer" name="contactMe" action="POST" data-netlify="true">
+      <h2><span>03.</span> Contact Me </h2>
+      <div class="contactCard">
+        <label for="name">Name:</label>
+        <input type="text"  name="name" id="name"placeholder="Your Name" required/><br>
+        <label for="tel">Phone Number:</label>
+        <input type="tel" name="tel" id="tel" placeholder="0428634295" maxlength="10" required/><br>
+        <label for="email">Email Address:</label>
+        <input type="email" name="email" id="email" placeholder="youremail@email.com"  required/><br>
+        <label for="textarea">Message:</label>
+        <textarea type="textarea" name="textarea" id="textarea"  placeholder="Type your message here." required></textarea><br>
+        <div class="btnContainer">
+          <button class="btn contactBtn">Send Message...</button>
+        </div>
       </div>
-    </div>
-  </form>
-</div>
-
+    </form>
+</section>
+</main>
 <footer class="footerSection">
   <div class="footerContainer">
     <div class="footerCard">
-      <ul class="footerSocialLinks">
-        <li><a href="https://github.com/MrAjMann" name="Github"  target="_blank" rel="noopener"><i class="fab fa-github fa-2x"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/anthonyjmann87" name="linkedin"target="_blank" rel="noopener"><i class="fab fa-linkedin fa-2x"></i></a></li>
-        <li><a href="https://twitter.com/MyCodingJourne3" name="Twitter" target="_blank" rel="noopener"><i class="fab fa-twitter fa-2x"></i></a></li>
-      </ul>
-      <ul class="footerContactLinks">
-        <li class="Footerlinks" ><a href="mailto:anthonyjmann87@gmail.com">anthonyjmann87@gmail.com</a></li>
-        <li class="Footerlinks"><a href="tel:0428634295">0428634295</a></li>
+      <div class="socialMenu">
+        <ul>
+          <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="#" class="email"><i class="fas fa-at "></i></a></li>
+          <li><a href="#" class="github"><i class="fab fa-github "></i></a></li>
         </ul>
-        
-  </div>
+      </div>
+    </div>
+    <p>&copy; Anthony J Mann 2020</p>
 </div>
 </footer>
 </body>
@@ -169,5 +173,5 @@
     src="https://kit.fontawesome.com/05e9fd9dda.js"
     crossorigin="anonymous"
     ></script>
-<script src="dist/js/app.js"></script>
+<script src="/js/app.js"></script>
 </html>

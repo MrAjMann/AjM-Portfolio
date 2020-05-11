@@ -1,0 +1,113 @@
+.burgerMenu {
+  cursor: pointer;
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  z-index: 3;
+  @include easeOut;
+
+  .btnLine {
+    height: 3px;
+    width: 28px;
+    margin: 0 0 5px 0;
+    background: #fff;
+    @include easeOut;
+  }
+
+  // Rotate Burger Menu into an X
+  &.close {
+    transition: transform 0.5s ease-in;
+    transform: rotate(180deg);
+
+    .btnLine {
+      // Line 1 Rotate
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      // Line 2 hide
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      // Line 3 Rotate
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .body {
+    position: relative;
+    &.show {
+      overflow-y: hidden;
+    }
+  }
+  header {
+    .burgerMenu {
+      position: fixed;
+      visibility: visible;
+    }
+  }
+  .swing-left-fwd {
+    -webkit-animation: swing-left-fwd 2s ease-out reverse forwards;
+    animation: swing-left-fwd 2s ease-out reverse forwards;
+  }
+  .menu {
+    position: fixed;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    background-color: darken($primary-bg-color, 50%);
+    opacity: 0.9;
+    // transform: rotate3d(0, -100%, 0);
+    -webkit-animation: swing-left-bck 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: swing-left-bck 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    // @include easeIn;
+    visibility: hidden;
+
+    &.show {
+      @include easeOut;
+      -webkit-animation: swing-left-fwd 1.5s ease-in reverse;
+      animation: swing-left-fwd 1.5s ease-in reverse;
+      // transform: rotate3d(0, 0, 0);
+      visibility: visible;
+    }
+
+    .menuPortrait {
+      .portrait {
+        background: url(../Assets/Me336px.png);
+        background-size: cover;
+        margin-top: 4em;
+        // margin-left: 3rem;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        border: solid 3px #ff7f00;
+      }
+    }
+    .menuNav {
+      display: flex;
+      flex-direction: column;
+
+      .navItem {
+        margin: 0 2.3em 1em 0;
+        a {
+          font-family: $main-font-stack;
+          color: $primary-fnt-color;
+          font-size: 1.5rem;
+          font-style: medium;
+          font-weight: 500;
+          letter-spacing: 0.025em;
+        }
+      }
+    }
+  }
+}

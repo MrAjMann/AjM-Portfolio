@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/MrAjMann/AjM-Portfolio/issues"
   },
-  "homepage": "https://github.com/MrAjMann/AjM-Portfolio#readme"
+  "homepage": "https://github.com/MrAjMann/AjM-Portfolio#readme",
+  "dependencies": {
+    "sass": "^1.26.2"
+  }
 }
