@@ -1,3 +1,4 @@
+@import "socialSidebar";
 @include desktop {
   body {
     display: block;
@@ -29,16 +30,19 @@
     position: initial;
 
     .heroSection {
+      overflow-y: hidden;
       display: flex;
       justify-content: center;
+      margin-left: 14em;
+      margin-right: 14em;
 
       .heroContainer {
         h1 {
           text-align: center;
-          font-size: 5em;
+          font-size: 2.5em;
         }
         h2 {
-          font-size: 3.5em;
+          font-size: 2.5em;
         }
 
         .heroText {
@@ -56,9 +60,43 @@
       margin-left: 14em;
       margin-right: 14em;
     }
+    h2 {
+      font-size: 2.5em;
+    }
     p {
       font-size: 1.3em;
       line-height: 1.3em;
     }
+  }
+}
+.projects {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: 14em;
+  margin-right: 14em;
+
+  h2 {
+    font-size: 2.5em;
+  }
+  p {
+    font-size: 1.3em;
+    line-height: 1.3em;
+  }
+}
+
+.contactSection {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: 14em;
+  margin-right: 14em;
+
+  h2 {
+    font-size: 2.5em;
+  }
+  p {
+    font-size: 1.3em;
+    line-height: 1.3em;
   }
 }

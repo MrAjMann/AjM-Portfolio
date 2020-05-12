@@ -1,77 +1,73 @@
 @include desktop {
   .socialMenu {
-    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: inherit;
+    top: 50;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    padding-left: 0;
+  }
+  /* Style the icon bar links */
+  a {
+    display: block;
+    border-radius: 45%;
+    padding: 8px;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+    color: white;
+  }
+  i {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 3em;
+
+    -webkit-transform: perspective(5px) translateZ(0);
+    transform: perspective(5px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+
+  .socialMenu :not(:last-child) {
+    margin-bottom: 1em;
+  }
+
+  .socialMenu i:hover,
+  .socialMenu i:focus,
+  .socialMenu i:active {
+    color: #ff7f00;
+
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
   }
 }
-
-.socialMenu {
-  list-style: none;
-  display: inline-flex;
-  flex-direction: column;
-  padding: inherit;
-  top: 50;
-  margin: 0;
-  position: absolute;
-  right: 0;
-  padding-left: 0;
-}
-/* Style the icon bar links */
-a {
-  display: block;
-  border-radius: 45%;
-  padding: 8px;
-  margin-bottom: 1rem;
-  transition: all 0.3s ease;
-  color: white;
-}
-i {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 2em;
-
-  -webkit-transform: perspective(5px) translateZ(0);
-  transform: perspective(5px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-
-.socialMenu :not(:last-child) {
-  margin-bottom: 1em;
-}
-
-.socialMenu i:hover,
-.socialMenu i:focus,
-.socialMenu i:active {
-  color: #ff7f00;
-
-  -webkit-transform: translateY(-15px);
-  transform: translateY(-15px);
-}
-
 @include phone {
   .socialMenu li a {
     i {
-      font-size: 1em;
+      font-size: 2em;
     }
   }
-}
-.socialMenu {
-  display: flex;
-  justify-content: center;
-  margin-right: 3em;
-  background: #8892b0;
-  align-items: center;
-  li {
-    display: inline-flex;
-    justify-content: space-between;
-    margin: 0.1rem;
-    i {
-      color: rgba(255, 255, 255, 0.5);
-      font-size: 1.5em;
+
+  .socialMenu {
+    display: flex;
+    justify-content: center;
+    margin-right: 3em;
+    background: #8892b0;
+    align-items: center;
+    li {
+      display: inline-flex;
+      justify-content: space-between;
+      margin: 0.1rem;
+      i {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 1.5em;
+      }
     }
   }
 }
