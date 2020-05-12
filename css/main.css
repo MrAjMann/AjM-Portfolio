@@ -234,7 +234,7 @@
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    margin: 1em;
+    margin: 2em;
   }
   .projects img {
     width: 100%;
@@ -298,6 +298,11 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin: 1em;
   }
   .contactSection .contactContainer .contactCard label {
     color: #fff;
@@ -499,48 +504,42 @@
     font-size: 1.3em;
     line-height: 1.3em;
   }
-}
-
-.projects {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  margin-left: 14em;
-  margin-right: 14em;
-}
-
-.projects h2 {
-  font-size: 2.5em;
-}
-
-.projects p {
-  font-size: 1.3em;
-  line-height: 1.3em;
-}
-
-.contactSection {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  margin-left: 14em;
-  margin-right: 14em;
-}
-
-.contactSection h2 {
-  font-size: 2.5em;
-}
-
-.contactSection p {
-  font-size: 1.3em;
-  line-height: 1.3em;
+  .projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin-left: 14em;
+    margin-right: 14em;
+  }
+  .projects h2 {
+    font-size: 2.5em;
+  }
+  .projects p {
+    font-size: 1.3em;
+    line-height: 1.3em;
+  }
+  .contactSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin-left: 14em;
+    margin-right: 14em;
+  }
+  .contactSection h2 {
+    font-size: 2.5em;
+  }
+  .contactSection p {
+    font-size: 1.3em;
+    line-height: 1.3em;
+  }
 }
 
 @media (min-width: 768px) {
