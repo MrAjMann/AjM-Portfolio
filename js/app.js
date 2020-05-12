@@ -1,10 +1,13 @@
-// Select DOM Items
+// Select DOM Items for menu
 const menuBody = document.querySelector(".body");
 const menuBtn = document.querySelector(".burgerMenu");
 const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menuNav");
 const menuBranding = document.querySelector(".menuPortrait");
 const navItems = document.querySelectorAll(".navItem");
+
+// Select project buttons
+const projectBtn = document.querySelector(".projectBtn");
 
 // Set Initial State Of Menu
 let showMenu = false;
@@ -36,4 +39,10 @@ function toggleMenu() {
   HTMLBodyElement.ontouchend = (e) => {
     e.preventDefault();
   };
+}
+
+projectBtn.addEventListener("click", gotoProject);
+
+function gotoProject() {
+  window.open("https://github.com/MrAjMann/MedMinder");
 }

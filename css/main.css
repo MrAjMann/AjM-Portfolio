@@ -164,6 +164,11 @@
 }
 
 @media (min-width: 320px) {
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    overflow-x: hidden;
+  }
   .heroSection {
     position: relative;
     text-align: center;
@@ -423,6 +428,14 @@
   .socialMenu li i {
     color: rgba(255, 255, 255, 0.5);
     font-size: 1.5em;
+  }
+}
+
+@media (min-width: 768px) {
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    overflow-x: visible;
   }
 }
 
@@ -689,12 +702,6 @@
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
   }
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 a {

@@ -1,4 +1,8 @@
 @include phone {
+  * {
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
   .heroSection {
     .heroPortraitContainer {
       height: 0;

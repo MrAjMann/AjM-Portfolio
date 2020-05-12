@@ -1,4 +1,11 @@
 @import "socialSidebar";
+
+@media (min-width: 768px) {
+  * {
+    box-sizing: border-box;
+    overflow-x: visible;
+  }
+}
 @include desktop {
   body {
     display: block;
