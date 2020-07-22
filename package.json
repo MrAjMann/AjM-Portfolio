@@ -1,22 +1,25 @@
 {
   "name": "ajm-portfolio",
   "version": "1.0.0",
-  "description": "Personal Portfolio",
+  "description": "My Personal Portfolio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "node-sass -w scss/ -o dist/scss --recursive"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MrAjMann/AjM-Portfolio.git"
   },
+  "keywords": [
+    "Portfolio"
+  ],
   "author": "Anthony Mann",
-  "license": "MIT",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/MrAjMann/AjM-Portfolio/issues"
   },
   "homepage": "https://github.com/MrAjMann/AjM-Portfolio#readme",
-  "dependencies": {
-    "sass": "^1.26.2"
+  "devDependencies": {
+    "node-sass": "^4.14.1"
   }
 }
