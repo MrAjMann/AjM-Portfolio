@@ -12,3 +12,12 @@ $main-font-stack: "Montserrat", sans-serif;
 $secondary-font-stack: "Spartan", sans-serif;
 
 
+// Set text color
+
+@function set-text-color($color) {
+    @if(lightness($color) > 50) {
+        @return #000;
+    } @else {
+        @return #fff;
+    }
+}

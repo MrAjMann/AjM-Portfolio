@@ -20,55 +20,75 @@
     <header id="header-inner">
         <div class="container">
             <nav id="main-nav">
-                <img src="../dist/img/brandLogo.svg" alt="My Coding Journey Logo" id="logo">
+                <img src="/dist/img/brandLogo.svg" alt="My Coding Journey Logo" id="logo">
                 <ul>
                     <li>
-                        <a href="index.html" class="navLink">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="about.html" class="navLink">About</a>
+                        <a href="about.html" class="current">About</a>
                     </li>
                     <li>
-                        <a href="projects.html" class="navLink">Projects</a>
+                        <a href="projects.html">Projects</a>
                     </li>
                     <!-- Need to add a blog page link here -->
+                    <!-- <li>
+                        <a href="blog.html">Blog</a>
+                    </li> -->
                     <li>
-                        <a href="blog.html" class="navLink">Contact</a>
+                        <a href="contact.html">Contact</a>
                     </li>
-                    <li>
-                        <a href="contact.html" class="navLink">Contact</a>
-                    </li>
-                    <li class="btnContainer">
+                    <li class="btn-container">
                         <a class="btn" href="./Assets/Anthony Mann CV 2020.pdf" download="AnthonyMannResume">Resume</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
+
     <!-- About Me -->
-    <section class="aboutMe" id="about">
-        <div class="aboutMeContainer">
-            <h2><span> 01.</span> About Me</h2>
-            <div class="aboutMeContent">
-                <p class="about-text"> Hey, I'm Anthony an aspiring <span>Fullstack developer</span> currently based in
-                    Toowoomba, QLD however I am moving to Brisbane by the end of March 2020. <br>
-                    So for the last few years I have been working in the Aged care sector and it is my main reason for
-                    this
-                    change, I wish to develop applications and web based services within the Health Care industry to
-                    provide
-                    support for nursing staff, patients and thier families.
-                </p>
-                <div class="currentTech">
-                    <h4>Technologies Used</h4>
-                    <ul class="techList">
-                        <li> <span> > </span> HTML & CSS</li>
-                        <li> <span> > </span> Javascript (ES6)</li>
-                        <li> <span> > </span> Ruby</li>
-                        <li> <span> > </span> Python</li>
-                        <li> <span> > </span> Github</li>
-                    </ul>
+    <section id="about-a" class="text-center py-3">
+        <div class="container">
+            <h2 class="section-title"><span> 01.</span> About Me</h2>
+            <div class="bottom-line"></div>
+
+            <p class="lead"> Hi there, this is my why...</p>
+            <div class="about-info">
+                <img src="/dist/img/MeBandW.png" alt="" class="bio-image my-3" style="border-radius: 25px;">
+                <div class="bio bg-light">
+                    <h4>Former Assistant Nurse in Aged Care - Turned Web / App Developer</h4>
+
+                    <p>
+                        For the past 4 years I have been working within an Aged Care facility, helping residents of
+                        varying levels of physical and mental abilities make the best of the years they have left,
+                        however I have always felt I could do more to just not within the confines of the facility.
+                    </p>
+                    <p class="my-1"> …Did the soul work to identify my next step, and took it.</p>
+                    <p>
+                        As a young fella, I always said I wanted to get into game development, yet the more I looked
+                        into the industry the more I realised it really wasnt for me.
+
+                        I was helping a Registered Nurse change dressings on a resident, they had a large wound known as
+                        pressure sore it was stage 4 (Really really bad). Now the reason I tell you this is the reason
+                        for my career change, I had an idea that day for an application that would not only aid in
+                        preventing deteriation of wounds, it would also allow nurses and doctors to treat the patients
+                        faster.
+                    </p>
+                    <p>Now i understand that not everyone can make the next Uber, however that day that I knew as a
+                        developer I can make a difference.</p>
                 </div>
             </div>
+            <!-- <div class="">
+                <h4>Technologies Used</h4>
+                <ul class="">
+                    <li> <span> > </span> HTML & CSS</li>
+                    <li> <span> > </span> Javascript (ES6)</li>
+                    <li> <span> > </span> Ruby</li>
+                    <li> <span> > </span> Python</li>
+                    <li> <span> > </span> Github</li>
+                </ul>
+            </div> -->
+
         </div>
         </div>
     </section>
@@ -78,17 +98,15 @@
         <div class="footer-content container">
             <p>&copy; Anthony J Mann 2020</p>
             <div class="social">
-                <ul>
-                    <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="#" class="email"><i class="fas fa-at "></i></a></li>
-                    <li><a href="#" class="github"><i class="fab fa-github "></i></a></li>
-                </ul>
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="email"><i class="fas fa-at "></i></a>
+                <a href="#" class="github"><i class="fab fa-github "></i></a>
             </div>
         </div>
     </footer>
 </body>
 <script src="https://kit.fontawesome.com/05e9fd9dda.js" crossorigin="anonymous"></script>
-<script src="/js/app.js"></script>
+<script src="/dist/js/typewriter.js"></script>
 
 </html>

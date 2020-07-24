@@ -20,62 +20,61 @@
     <header id="header-inner">
         <div class="container">
             <nav id="main-nav">
-                <img src="../dist/img/brandLogo.svg" alt="My Coding Journey Logo" id="logo">
+                <img src="/dist/img/brandLogo.svg" alt="My Coding Journey Logo" id="logo">
                 <ul>
                     <li>
-                        <a href="index.html" class="navLink">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="about.html" class="navLink">About</a>
+                        <a href="about.html">About</a>
                     </li>
                     <li>
-                        <a href="projects.html" class="navLink">Projects</a>
+                        <a href="projects.html">Projects</a>
                     </li>
                     <!-- Need to add a blog page link here -->
+                    <!-- <li>
+                        <a href="blog.html">Blog</a>
+                    </li> -->
                     <li>
-                        <a href="blog.html" class="navLink">Contact</a>
+                        <a href="contact.html" class="current">Contact</a>
                     </li>
-                    <li>
-                        <a href="contact.html" class="navLink">Contact</a>
-                    </li>
-                    <li class="btnContainer">
+                    <li class="btn-container">
                         <a class="btn" href="./Assets/Anthony Mann CV 2020.pdf" download="AnthonyMannResume">Resume</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
+
     <!-- Contact Me -->
-    <section class="contactSection">
-        <form class="contactContainer" name="contactMe" action="POST" data-netlify="true">
-            <h2><span>03.</span> Contact Me </h2>
-            <div class="contactCard">
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name" placeholder="Your Name" required /><br>
-                <label for="tel">Phone Number:</label>
-                <input type="tel" name="tel" id="tel" placeholder="Your number here" maxlength="10" required /><br>
-                <label for="email">Email Address:</label>
-                <input type="email" name="email" id="email" placeholder="youremail@email.com" required /><br>
-                <label for="textarea">Message:</label>
-                <textarea type="textarea" name="textarea" id="textarea" placeholder="Type your message here."
-                    required></textarea><br>
-                <div class="btnContainer">
-                    <button class="btn contactBtn">Send Message...</button>
+    <section id="contact-a" class="text-center py-3">
+        <div class="container">
+            <h2 class="section-title"><span>05.</span> Contact Me </h2>
+            <div class="bottom-line"></div>
+            <p class="lead">Here is how you can reach me:</p>
+            <form>
+                <div class="text-fields py-3">
+                    <input type="text" class="text-input name-input" placeholder="Name">
+                    <input type="text" class="text-input subject-input" placeholder="Subject">
+                    <input type="email" class="text-input email-input" placeholder="Email">
+                    <input type="text" class="text-input phone-input" placeholder="Phone Number">
+                    <textarea class="text-input message-input" placeholder="Enter Message"></textarea>
                 </div>
-            </div>
-        </form>
+                <button type="submit" class="btn-dark my-1">Submit</button>
+            </form>
+        </div>
+
     </section>
+    <!-- Main Footer -->
     <!-- Main Footer -->
     <footer id="main-footer">
         <div class="footer-content container">
             <p>&copy; Anthony J Mann 2020</p>
             <div class="social">
-                <ul>
-                    <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="#" class="email"><i class="fas fa-at "></i></a></li>
-                    <li><a href="#" class="github"><i class="fab fa-github "></i></a></li>
-                </ul>
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="email"><i class="fas fa-at "></i></a>
+                <a href="#" class="github"><i class="fab fa-github "></i></a>
             </div>
         </div>
     </footer>

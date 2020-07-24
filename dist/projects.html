@@ -20,85 +20,82 @@
     <header id="header-inner">
         <div class="container">
             <nav id="main-nav">
-                <img src="../dist/img/brandLogo.svg" alt="My Coding Journey Logo" id="logo">
+                <img src="/dist/img/brandLogo.svg" alt="My Coding Journey Logo" id="logo">
                 <ul>
                     <li>
-                        <a href="index.html" class="navLink">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="about.html" class="navLink">About</a>
+                        <a href="about.html">About</a>
                     </li>
                     <li>
-                        <a href="projects.html" class="navLink">Projects</a>
+                        <a href="projects.html" class="current">Projects</a>
                     </li>
                     <!-- Need to add a blog page link here -->
+                    <!-- <li>
+                        <a href="blog.html">Blog</a>
+                    </li> -->
                     <li>
-                        <a href="blog.html" class="navLink">Contact</a>
+                        <a href="contact.html">Contact</a>
                     </li>
-                    <li>
-                        <a href="contact.html" class="navLink">Contact</a>
-                    </li>
-                    <li class="btnContainer">
+                    <li class="btn-container">
                         <a class="btn" href="./Assets/Anthony Mann CV 2020.pdf" download="AnthonyMannResume">Resume</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
+
+
     <!-- Projects -->
-    <section class="projects" id="projects">
-        <div class="projectContainer">
-            <h2><span>02.</span> Projects</h2>
-            <!-- First Card -->
-            <div class="projectCard">
-                <h4><span>MedMinder</span></h4>
-                <div class="projectItem">
-                    <a href=""><img src="/Assets/MedMinderInitScreen.png" alt="MedMinder Initial screen"></a>
-                </div>
-                <div class="projectContent">
-                    <p>Have you ever been focused so intently on your latest development
-                        project that you forgot to take your medication?
-                        What about when it's 10 pm and you forgot to get your script filled?
-                        Well never again! With MedMinder at your side this becomes a problem of the past, simply
-                        schedule a
-                        reminder and never worry about missing meds again.
-                    </p>
-                    <div class="btnContainer">
-                        <button class="btn projectBtn">Check it out...</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Second Card -->
-            <div class="projectCard">
-                <h4><span>Project Name</span></h4>
+    <section id="projects-a" class="text-center py-3">
+        <div class="container">
+            <h2 class="section-title"><span>02.</span> Projects</h2>
+            <div class="bottom-line"></div>
+            <p class="lead">Check out some of my projects</p>
+
+            <div class="items">
                 <div class="item">
-                    <a href=""><img src="../landingPage.png" alt="Project Photo"></a>
+                    <div class="item-image">
+                        <img src="/dist/img/MedMinderInitScreen.png" alt="MedMinder">
+                    </div>
+                    <div class="item-text">
+                        <div class="item-text-wrap">
+                            <p class="item-text-category text-center">Application</p>
+                            <h2 class="item-text-title">Med-Minder</h2>
+                            <a href="project-medminer.html" class="btn-light my-1">Check it out</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="projectContent">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Iusto veniam dolorum molestias, ea hic debitis quis quas.
-                    </p>
-                    <div class="btnContainer">
-                        <button class="btn projectBtn">Check it out...</button>
+
+                <div class="item">
+                    <div class="item-image">
+                        <img src="/dist/img/landingPage.png" alt="Project Photo">
+                    </div>
+                    <div class="item-text">
+                        <div class="item-text-wrap">
+                            <p class="item-text-category">UI / UX</p>
+                            <h2 class="item-text-title">Portfolio</h2>
+                            <a href="project-medminer.html" class="btn-light">Check it out</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
+
     <!-- Main Footer -->
     <footer id="main-footer">
         <div class="footer-content container">
             <p>&copy; Anthony J Mann 2020</p>
             <div class="social">
-                <ul>
-                    <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="#" class="email"><i class="fas fa-at "></i></a></li>
-                    <li><a href="#" class="github"><i class="fab fa-github "></i></a></li>
-                </ul>
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="email"><i class="fas fa-at "></i></a>
+                <a href="#" class="github"><i class="fab fa-github "></i></a>
             </div>
         </div>
     </footer>
+
 </body>
 <script src="https://kit.fontawesome.com/05e9fd9dda.js" crossorigin="anonymous"></script>
 <script src="/js/app.js"></script>
