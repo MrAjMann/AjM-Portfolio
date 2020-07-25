@@ -2,12 +2,16 @@
 @import "utilities";
 @import "project-grid";
 
-
+*{
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: $main-font-stack;
   line-height: 1.6;
   background: #fff;
+  
 }
 
 
@@ -40,29 +44,15 @@ img {
 #header {
   &-home {
     background: $bg-image no-repeat 20% 30% / cover;
-    height: 5.5rem;
     border-bottom: 3px solid $main-color;
     
-    // Header Content
-    .header-content {
-      padding-top: 20%;
-      
-      h1 {
-        font-size: 4rem;
-        line-height: 1.2;
-      }
-      h2 {
-        font-size: 2rem;
-        line-height: 1rem;
-      }
-    }
   }
   // Header Inner
   &-inner {
     background: $bg-image no-repeat 20% 30% / cover;
     height: 5.5rem;
     border-bottom: 3px solid $main-color;
-}
+  }
 }
 // Main Nav
 #main-nav {
@@ -94,9 +84,25 @@ img {
     }
   }
 }
-
-#about {
+#home {
+  &-a{
+    padding: 10% 0;
+    // height: 59vh;
+          
+          h1 {
+            font-size: 4rem;
+            line-height: 1.2;
+          }
+          h2 {
+            font-size: 2rem;
+            line-height: 1rem;
+          }
+        
+  }
+}
+  #about {
   &-a {
+    
       .about-info {
           display: grid;
           grid-template-areas: 
@@ -124,7 +130,7 @@ img {
           'name email'
           'subject phone'
           'message message';
-          grid-gap: 1.2rem;
+          grid-gap: 1rem;
           margin-bottom: 1.2rem;
 
 
@@ -159,12 +165,9 @@ img {
 }
 
 #main-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
   background: $bg-image no-repeat 20% 30% / cover;
   color: #fff;
+  height: 5rem;
   
   .footer-content {
     display: flex;
@@ -177,7 +180,7 @@ img {
           margin-right: 1rem;
           border: 2px #fff solid;
           border-radius: 20%;
-          // height: 20px;
+          height: 20px;
           width: 20px;
           line-height: 20px;
           text-align: center;
@@ -189,3 +192,4 @@ img {
       }
   }
 }
+@import 'media';
