@@ -1,82 +1,23 @@
 /* Configurations for Portfolio */
+$website-width: 1200px;
+$main-color: #ff7f00;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: #333;
+$bg-image: url('../img/showcase.jpg');
 
-// Mixins
-@mixin easeOut {
-  transition: all 0.5s ease-out;
-}
-
-// Screen Sizes
-$phone: 320px;
-// $lrgPhone: 500px;
-// $tabletPortrait: 768px;
-$desktop: 768px;
-// $desktop: 1920px;
-
-@mixin phone {
-  @media (min-width: #{$phone}) {
-    @content;
-  }
-}
-
-// @mixin laptop {
-//   @media (min-width: #{$laptop}) {
-//     @content;
-//   }
-// }
-@mixin desktop {
-  @media (min-width: #{$desktop}) {
-    visibility: hidden;
-    @content;
-  }
-}
 
 //Fonts:
 $main-font-stack: "Montserrat", sans-serif;
 $secondary-font-stack: "Spartan", sans-serif;
 
-// Colours:
-$primary-bg-color: #8892b0;
-$primary-fnt-color: #ffffff;
-$secondary-fnt-color: #e8e8e8;
 
-.btnContainer {
-  text-align: center;
-  font-size: 1em;
-  .btn {
-    border: none;
-    background: #404040;
-    color: #ffffff;
-    font-weight: 100;
-    padding: 20px;
-    text-transform: uppercase;
-    display: inline-block;
-    border-radius: 6px;
-    transition: all 0.3s ease 0s;
-    // padding-right: 10px;
-    &:hover {
-      border: none;
-      color: #404040;
-      font-weight: 700;
-      letter-spacing: 2px;
-      background: #ffb266;
-      box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-      transition: all 0.3s ease 0s;
-      &:span {
-        &:after {
-          opacity: 0;
-          right: 0;
-        }
-      }
-      &:span {
-        &:after {
-          content: "\00bb";
-          position: absolute;
-          opacity: 0;
-          top: 0;
-          right: -20px;
-          transition: 0.5s;
-        }
-      }
+// Set text color
+
+@function set-text-color($color) {
+    @if(lightness($color) > 50) {
+        @return #000;
+    } @else {
+        @return #fff;
     }
-  }
 }
