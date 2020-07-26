@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-sitemap: https://anthonyjmann.netlify.com/sitemap.xml
