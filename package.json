@@ -2,7 +2,7 @@
   "name": "ajm-portfolio",
   "version": "1.0.0",
   "description": "My Personal Portfolio",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/scss --recursive"
   },
