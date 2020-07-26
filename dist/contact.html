@@ -52,13 +52,13 @@
             <h2 class="section-title"><span>05.</span> Contact Me </h2>
             <div class="bottom-line"></div>
             <p class="lead">Here is how you can reach me:</p>
-            <form>
+            <form name="contact" method="POST" data-netlify="true">
                 <div class="text-fields py-3">
-                    <input type="text" class="text-input name-input" placeholder="Name">
-                    <input type="text" class="text-input subject-input" placeholder="Subject">
-                    <input type="email" class="text-input email-input" placeholder="Email">
-                    <input type="text" class="text-input phone-input" placeholder="Phone Number">
-                    <textarea class="text-input message-input" placeholder="Enter Message"></textarea>
+                    <input name="name" type="text" class="text-input name-input" placeholder="Name">
+                    <input name="Subject" type="text" class="text-input subject-input" placeholder="Subject">
+                    <input name="email" type="email" class="text-input email-input" placeholder="Email">
+                    <input name="phone" type="text" class="text-input phone-input" placeholder="Phone Number">
+                    <textarea name="message" class="text-input message-input" placeholder="Enter Message"></textarea>
                 </div>
                 <button type="submit" class="btn-dark my-1">Submit</button>
             </form>
