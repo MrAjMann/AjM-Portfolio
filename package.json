@@ -4,7 +4,7 @@
   "description": "My Personal Portfolio",
   "main": "app.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/scss --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "repository": {
     "type": "git",
