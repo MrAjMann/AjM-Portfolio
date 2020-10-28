@@ -185,7 +185,9 @@ a {
 ul {
   list-style: none; }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   text-transform: uppercase; }
 
 img {
@@ -237,7 +239,7 @@ img {
 
 #about-a .about-info {
   display: grid;
-  grid-template-areas: 'bioimage bio bio';
+  grid-template-areas: "bioimage bio bio";
   grid-gap: 1.2rem; }
 
 #about-a .bio-image {
@@ -250,7 +252,7 @@ img {
 
 #contact-a .text-fields {
   display: grid;
-  grid-template-areas: 'name email' 'subject phone' 'message message';
+  grid-template-areas: "name email" "subject phone" "message message";
   grid-gap: 1rem;
   margin-bottom: 1.2rem; }
   #contact-a .text-fields .name-input {
@@ -267,10 +269,13 @@ img {
   #contact-a .text-fields .text-input {
     padding: 0.5rem 1rem; }
 
-#contact-a button[type='submit'] {
+#contact-a button[type="submit"] {
   width: 50%; }
 
 #main-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
   color: #fff;
   height: 5rem; }

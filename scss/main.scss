@@ -2,7 +2,7 @@
 @import "utilities";
 @import "project-grid";
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -11,9 +11,7 @@ body {
   font-family: $main-font-stack;
   line-height: 1.6;
   background: #fff;
-  
 }
-
 
 a {
   text-decoration: none;
@@ -24,7 +22,9 @@ ul {
   list-style: none;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   text-transform: uppercase;
 }
 
@@ -34,7 +34,7 @@ img {
 }
 
 // Logo
-#logo  {
+#logo {
   width: 70px;
   height: 70px;
   color: #fff;
@@ -45,7 +45,6 @@ img {
   &-home {
     background: $bg-image no-repeat 20% 30% / cover;
     border-bottom: 3px solid $main-color;
-    
   }
   // Header Inner
   &-inner {
@@ -59,14 +58,14 @@ img {
   display: flex;
   justify-content: space-between;
   padding-top: 1rem;
-  
+
   ul {
     display: flex;
   }
   li {
     padding: 1rem 1.5rem;
   }
-  
+
   a {
     text-decoration: none;
     color: #fff;
@@ -74,122 +73,119 @@ img {
     border-bottom: 3px transparent solid;
     padding-bottom: 0.5rem;
     transition: border-color 0.5s;
-    
+
     &:hover {
       border-color: $medium-color;
     }
-    
+
     &.current {
-      border-color: $main-color; 
+      border-color: $main-color;
     }
   }
 }
 #home {
-  &-a{
+  &-a {
     padding: 10% 0;
     // height: 59vh;
-          
-          h1 {
-            font-size: 4rem;
-            line-height: 1.2;
-          }
-          h2 {
-            font-size: 2rem;
-            line-height: 1rem;
-          }
-        
+
+    h1 {
+      font-size: 4rem;
+      line-height: 1.2;
+    }
+    h2 {
+      font-size: 2rem;
+      line-height: 1rem;
+    }
   }
 }
-  #about {
+#about {
   &-a {
-    
-      .about-info {
-          display: grid;
-          grid-template-areas: 
-          'bioimage bio bio';
-          grid-gap: 1.2rem;
-      }
+    .about-info {
+      display: grid;
+      grid-template-areas: "bioimage bio bio";
+      grid-gap: 1.2rem;
+    }
 
-      // Grid Area
-      .bio-image {
-          grid-area: bioimage;
-      } 
-      .bio {
-          grid-area: bio;
-          border-left: 3px solid $main-color;
-          padding: 0.8rem;
-      }
+    // Grid Area
+    .bio-image {
+      grid-area: bioimage;
+    }
+    .bio {
+      grid-area: bio;
+      border-left: 3px solid $main-color;
+      padding: 0.8rem;
+    }
   }
 }
 
 #contact {
   &-a {
-      .text-fields {
-          display: grid;
-          grid-template-areas:
-          'name email'
-          'subject phone'
-          'message message';
-          grid-gap: 1rem;
-          margin-bottom: 1.2rem;
+    .text-fields {
+      display: grid;
+      grid-template-areas:
+        "name email"
+        "subject phone"
+        "message message";
+      grid-gap: 1rem;
+      margin-bottom: 1.2rem;
 
+      // Grid Areas
+      .name-input {
+        grid-area: name;
+      }
+      .subject-input {
+        grid-area: subject;
+      }
+      .email-input {
+        grid-area: email;
+      }
+      .phone-input {
+        grid-area: phone;
+      }
+      .message-input {
+        grid-area: message;
+        height: 100px;
+      }
 
-          // Grid Areas
-          .name-input {
-              grid-area: name;
-          }
-          .subject-input {
-              grid-area: subject;
-          }
-          .email-input {
-              grid-area: email;
-          }
-          .phone-input {
-              grid-area: phone;
-          }
-          .message-input {
-              grid-area: message;
-              height: 100px;
-          }
-
-          .text-input {
-              padding: 0.5rem 1rem;
-          }
-      }  
-      button[type='submit'] {
-          width: 50%;
-      }  
+      .text-input {
+        padding: 0.5rem 1rem;
+      }
+    }
+    button[type="submit"] {
+      width: 50%;
+    }
   }
-
- 
 }
 
 #main-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background: $bg-image no-repeat 20% 30% / cover;
   color: #fff;
   height: 5rem;
-  
+
   .footer-content {
     display: flex;
     height: 5rem;
     justify-content: space-between;
     align-items: center;
-    
-      .social .fab, 
-      .social .fas {
-          margin-right: 1rem;
-          border: 2px #fff solid;
-          border-radius: 20%;
-          height: 20px;
-          width: 20px;
-          line-height: 20px;
-          text-align: center;
-          padding: 0.5rem;
 
-          &:hover {
-              background: $main-color;
-          }
+    .social .fab,
+    .social .fas {
+      margin-right: 1rem;
+      border: 2px #fff solid;
+      border-radius: 20%;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+      text-align: center;
+      padding: 0.5rem;
+
+      &:hover {
+        background: $main-color;
       }
+    }
   }
 }
-@import 'media';
+@import "media";
